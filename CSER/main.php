@@ -56,7 +56,19 @@ if(isset($_POST['user_id'])){
 			margin:20px;
 			font-size: 25px;
 		}
-		
+		.hidden
+        {
+            display: none;
+        }
+        .bold
+        {
+            font-weight: bold;
+        }
+        .moreboard
+        {
+            background-color: #FFFFCC; border: thin dotted #000000; padding: 2px; margin: 0px; width: 200px;
+            position:absolute;/*절대위치*/
+        }
 		header{
 			border:1px solid gray;
 		}
@@ -100,7 +112,29 @@ if(isset($_POST['user_id'])){
     	<form method="post" name="form" action="<?=$home_link?>" style="display: inline">
     		<input type="hidden" name="user_id" id="menu_hidden" value='<?=$filtered_user_id?>'>
     		<span><a href="<?=$home_link?>" onclick="logchk()" id="home">마이홈</a></span>
-    	</form>			
+    	</form>
+    	<script>
+			$(document).ready(function () {
+	        });
+	        $(document).ready(function () {
+	            var toggleStyleSwitcher = function () {
+	                $('#morespan').addClass('bold');
+	            };
+	            $('#moremenu').addClass('hidden');
+	 
+	            $('#moreButton').click(function (event) {
+	                $('#moremenu').toggleClass('hidden');
+	            });
+	 
+	            $('div:contains("내용 더보기")').click(toggleStyleSwitcher);
+	        });//더보기  		
+    	</script>
+    	<span id="morespan"><input type=button id="moreButton" value='더보기' align="bottom" />
+			<br><span id="moremenu"  class="moreboard">
+				<a href="">사이트 소개</a>
+				<a href="">개발자 소개</a>
+			</span>	
+    	</span><!--더보기-->    		
     		<script>
     			function logchk(){
     				value=document.getElementById('menu_hidden').value;
@@ -108,10 +142,9 @@ if(isset($_POST['user_id'])){
     				if(!empty(value)){
     					document.form.submit();
     				}
-    			}
-    			// 메뉴를 클릭했을때 로그인을 했는지 안했는지 체크하고 경로 지정
+    			}// 메뉴를 클릭했을때 로그인을 했는지 안했는지 체크하고 경로 지정
     		</script>
   		</form>
-	</nav>	
+	</nav>
 </body>
 </html>
