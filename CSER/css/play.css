@@ -15,4 +15,8 @@
 	flex-shrink: 1;
 	margin:0px 30px 0px 30px;
 	overflow: hidden;/*이미지가 div에 맞게*/
+	border-radius: 70%;
+}
+.Categoryimg{
+
 }

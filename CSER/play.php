@@ -15,8 +15,7 @@ require_once("urls/index_bottom.php");
 		<!-- <div class="box" style="background: #BDBDBD;">
 		    <img class="profile" src="/images/tistory.JPG">
 		</div> -->
-		<div class="container">
-			<script>
+		<script>
 				function goPost(user_id,num){
 					var form = document.writeform;
 					var Categorylink=document.getElementById('Categorylink');
@@ -36,14 +35,15 @@ require_once("urls/index_bottom.php");
 			<form method="post" name="writeform" id="Categorylink" action="">
 				<input type="hidden" name="user_id" value="">
 			</form>
+		<div class="container">
 			<div class="item">
 				<a href="javascript:goPost(<?=$filtered_user_id?>,1)">
-					<img src="images/test.jpg" alt="호기심탐구">
+					<img src="images/test.jpg" class="Categoryimg" alt="호기심탐구">
 				</a>
 			</div>
 			<div class="item">
 				<a href="javascript:goPost(<?=$filtered_user_id?>,2)">
-					<img src="images/test.jpg" alt="스케치북">
+					<img src="images/test.jpg" class="Categoryimg" alt="스케치북">
 				</a>
 			</div>
 			<div class="item">comming soon</div>
