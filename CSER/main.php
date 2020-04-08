@@ -1,5 +1,5 @@
 <?php
-require_once("index_top.php");
+require_once("urls/index_top.php");
 ?>
 <title>냉장고나라</title>
 	<style>
@@ -7,7 +7,7 @@ require_once("index_top.php");
 	</style>
 </head>
 <?php
-require_once("index_bottom.php");
+require_once("urls/index_bottom.php");
 ?>
 </body>
 </html>
