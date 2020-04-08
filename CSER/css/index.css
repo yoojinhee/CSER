@@ -1,0 +1,46 @@
+#title{			
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	font-size: 50px;
+}
+#name{
+	float:right;
+	margin:10px;
+}
+#menu{
+	border:1px solid red;
+	text-align: center;
+	padding:10px;
+}
+#log{
+	float:right;
+	margin:10px;
+}
+#play,#home{
+	margin:20px;
+	font-size: 25px;
+}
+.hidden
+{
+    display: none;
+}
+.bold
+{
+    font-weight: bold;
+}
+.moreboard
+{
+    background-color: #FFFFCC; border: thin dotted #000000; padding: 2px; margin: 0px; width: 200px;
+    position:absolute;/*절대위치*/
+}
+header{
+	border:1px solid gray;
+}
+a{
+	text-align:center;
+	text-decoration: none;
+}
+body{
+	margin:0px;
+}
