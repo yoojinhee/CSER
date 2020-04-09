@@ -8,6 +8,7 @@ $btn=array(
 $log_link="login.html";
 $play_link="login.html";
 $home_link="login.html";
+
 $escaped_name='';
 $filtered_user_id='';
 
@@ -17,15 +18,14 @@ if(isset($_POST['user_id'])){
 	$log_link="#";
     $play_link="play.php";
     $home_link="home.php";
+
 	$sql="select name from sign where user_id='{$filtered_user_id}'";
-	// $sql="select name from sign where user_id='{$_POST['user_id']}'";
 	$result=mysqli_query($conn,$sql);
 	$row=mysqli_fetch_array($result);
 	print_r(mysqli_error($conn));
 	$escaped_name=htmlspecialchars($row['name']);
 	$escaped_name=$escaped_name."님";
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="ko">

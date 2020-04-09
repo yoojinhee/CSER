@@ -12,29 +12,6 @@ require_once("urls/index_bottom.php");
 ?>
 <section>
 	<article>
-		<!-- <div class="box" style="background: #BDBDBD;">
-		    <img class="profile" src="/images/tistory.JPG">
-		</div> -->
-		<script>
-				function goPost(user_id,num){
-					var form = document.writeform;
-					var Categorylink=document.getElementById('Categorylink');
-
-					switch(num){
-						case 1:
-							Categorylink.setAttribute("action","호기심탐구.php");
-							break;
-						case 2:
-							Categorylink.setAttribute("action","스케치북.php");
-							break;
-					}
-					form.user_id.value=user_id;
-					form.submit();
-				}//카테고리 선텍후 넘어감 
-			</script>
-			<form method="post" name="writeform" id="Categorylink" action="">
-				<input type="hidden" name="user_id" value="">
-			</form>
 		<div class="container">
 			<div class="item">
 				<a href="javascript:goPost(<?=$filtered_user_id?>,1)">
