@@ -1,5 +1,5 @@
 <?php
-require_once("urls/index_top.php");
+require_once("lib/index_top.php");
 ?>
 <title>놀이학습</title>
 	<style>
@@ -8,7 +8,7 @@ require_once("urls/index_top.php");
 	</style>
 </head>
 <?php
-require_once("urls/index_bottom.php");
+require_once("lib/index_bottom.php");
 ?>
 <section>
 	<article>
