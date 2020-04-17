@@ -23,7 +23,7 @@ require_once("lib/index_bottom.php");
 					<img src="images/test.jpg" class="Categoryimg" alt="스케치북">
 				</a>
 			</div>
-			<div class="item">comming soon</div>
+			<!-- <div class="item">comming soon</div> -->
 		</div>
 	</article>
 </section>

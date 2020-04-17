@@ -16,7 +16,7 @@ function goPost(user_id,num){
 	
 	switch(num){
 		case 1:
-			Categorylink.setAttribute("action","호기심탐구.php");
+			Categorylink.setAttribute("action","curiosity.php");
 			break;
 		case 2:
 			Categorylink.setAttribute("action","스케치북.php");
