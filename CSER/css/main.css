@@ -1,0 +1,25 @@
+main{
+	background-color: #FFE1D6;
+	border: 1px solid gray;
+	height: 620px;
+}
+.container{
+	border: 1px solid gray;
+	text-align: center;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+.content{
+	border: 1px solid gray;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+.content:after { content:""; clear:both; display:block; }
+
+#more-view{
+	float:right;
+}
+#text{
+	margin-top:20px;
+	font-size: 30px;
+}

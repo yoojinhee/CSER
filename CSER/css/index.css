@@ -1,6 +1,7 @@
-#title{			
+#title{		
+	background-color: #FFDB00;	
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 30px;
 	padding-bottom: 20px;
 	font-size: 50px;
 }
@@ -9,6 +10,7 @@
 	margin:10px;
 }
 #menu{
+	background-color: #FFDB00;	
 	border:1px solid red;
 	text-align: center;
 	padding:10px;
@@ -36,7 +38,10 @@
 }
 header{
 	border:1px solid gray;
+	margin-left: 250px;
+	margin-right: 250px;
 }
+header:after { content:""; clear:both; display:block; }
 a{
 	text-align:center;
 	text-decoration: none;

@@ -5,8 +5,9 @@
 	<header>			
 		<span><a href="<?=$log_link?>" id="log" onclick="javascript:return logoutchk();"><?=$btn['log']?></a></span>
 		<span><a href='javascript:void(0);' onClick="top.location='javascript:location.reload()'" id="name"><?=$escaped_name?></a></span>
-		<div id="title"><a href='javascript:void(0);' onClick="top.location='javascript:location.reload()'">냉장고나라</a></div>
-	</header>	
+	</header>
+		<div id="title"><a href='javascript:void(0);' onClick="top.location='javascript:location.reload()'">로고</a></div>
+		
 	<form method="post" name="writeform" id="Categorylink" action="">
 		<input type="hidden" name="user_id" value=''>
 	</form>
