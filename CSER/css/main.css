@@ -13,8 +13,10 @@ main{
 }
 .content{
 	/*border: 1px solid gray/*/
-	margin-left: 280px;
-	margin-right: 280px;
+	margin-left: auto;
+	margin-right: auto;
+	width:706px;
+	height: 474px;
 }
 .content:after { content:""; clear:both; display:block; }
 
@@ -24,4 +26,7 @@ main{
 #text{
 	/*margin-top:20px;*/
 	font-size: 30px;
+}
+#sketch{
+	position: relative;
 }

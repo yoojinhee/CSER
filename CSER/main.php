@@ -14,7 +14,7 @@ require_once("lib/index_bottom.php");
 	<div class="container">
 		<div id="text">오늘의 스케치</div>
 		<div class="content">
-			<div><img src="images/test.jpg" alt="스케치" height="450px" width="670px"></div>
+			<div id="sketch"><img src="images/test.jpg" alt="스케치" height="450px" width="670px"></div>
 			<div id="more-view"><a href="">더 보러가기</a></div>
 		</div>
 	</div>

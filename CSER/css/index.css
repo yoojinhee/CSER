@@ -38,8 +38,10 @@
 }
 header{
 	/*border:1px solid gray;*/
-	margin-left: 250px;
-	margin-right: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	width:945px;
+	height: 40px;
 }
 header:after { content:""; clear:both; display:block; }
 a{
@@ -60,4 +62,5 @@ a{
 
 body{
 	margin:0px;
+	/*text-align: center;*/
 }
