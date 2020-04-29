@@ -11,7 +11,7 @@
 }
 #menu{
 	background-color: #FFDB00;	
-	border:1px solid red;
+	/*border:1px solid red;*/
 	text-align: center;
 	padding:10px;
 }
@@ -37,15 +37,27 @@
     position:absolute;/*절대위치*/
 }
 header{
-	border:1px solid gray;
+	/*border:1px solid gray;*/
 	margin-left: 250px;
 	margin-right: 250px;
 }
 header:after { content:""; clear:both; display:block; }
 a{
+	color:black;
 	text-align:center;
 	text-decoration: none;
 }
+#category a{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+#category a:nth-child(1){
+	color: #F70606; text-decoration: none;
+}
+#category a:nth-child(2){
+	color: #0C54F4; text-decoration: none;
+}
+
 body{
 	margin:0px;
 }

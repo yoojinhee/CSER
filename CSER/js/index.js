@@ -1,3 +1,11 @@
+function loginchk(){
+	if(confirm("로그인이 필요합니다. 로그인 하시겠습니까?")){
+		location.href = "login.html";
+		return true;
+	} else {
+    	return false;
+	}
+}//로그아웃 체크
 function logoutchk(){
 		value=document.getElementById("log").innerText;
 		if(value==="로그아웃"){
@@ -9,29 +17,29 @@ function logoutchk(){
 	    }
 		}
 }//로그아웃 체크
-function goPost(user_id,num){
-	var form = document.writeform;
-	var Categorylink=document.getElementById('Categorylink');
-	value=document.getElementById('menu_hidden').value;
+// function goPost(user_id,num){
+// 	var form = document.writeform;
+// 	var Categorylink=document.getElementById('Categorylink');
+// 	value=document.getElementById('menu_hidden').value;
 	
-	switch(num){
-		case 1:
-			Categorylink.setAttribute("action","curiosity.php");
-			break;
-		case 2:
-			Categorylink.setAttribute("action","sketch.php");
-			break;
-		case 3:
-			Categorylink.setAttribute("action","play.php");
-			break;
-		case 3:
-			Categorylink.setAttribute("action","home.php");
-			break;
-	}
-	form.user_id.value=user_id;
+// 	switch(num){
+// 		case 1:
+// 			Categorylink.setAttribute("action","curiosity.php");
+// 			break;
+// 		case 2:
+// 			Categorylink.setAttribute("action","sketch.php");
+// 			break;
+// 		case 3:
+// 			Categorylink.setAttribute("action","play.php");
+// 			break;
+// 		case 3:
+// 			Categorylink.setAttribute("action","home.php");
+// 			break;
+// 	}
+// 	form.user_id.value=user_id;
 	
-	form.submit();
-}//카테고리 선텍후 넘어감 
+// 	form.submit();
+// }//카테고리 선텍후 넘어감 
 function logchk(){
 		value=document.getElementById('menu_hidden').value;
 
